@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'SplitAI - Smart Bill Splitting App',
+  title: 'Splitwiser - Smart Bill Splitting App',
   description: 'Easily split bills with AI-powered item recognition and customizable sharing options',
 };
 

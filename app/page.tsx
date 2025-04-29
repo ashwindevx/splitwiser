@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-black mb-1">SplitAI</h1>
+        <h1 className="text-3xl font-bold text-black mb-1">Splitwiser</h1>
         <p className="text-sm text-gray-700">Smart & Fair Bill Splitting</p>
       </div>
       
