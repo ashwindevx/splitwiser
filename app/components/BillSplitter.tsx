@@ -6,7 +6,7 @@ import ItemsTable from './ItemsTable';
 import SummaryView from './SummaryView';
 
 export interface Item {
-  id: number | string;
+  id: number;
   name: string;
   price: number;
   assignedTo?: number[];
