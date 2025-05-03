@@ -1,9 +1,15 @@
-import './globals.css';
-import type { Metadata } from 'next';
+import "./globals.css";
+import { Poppins } from "next/font/google";
 
-export const metadata: Metadata = {
-  title: 'Splitwiser - Smart Bill Splitting App',
-  description: 'Easily split bills with AI-powered item recognition and customizable sharing options',
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+});
+
+export const metadata = {
+  title: "Splitwiser",
+  description: "Split expenses with friends and family",
 };
 
 export default function RootLayout({
@@ -12,9 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-white">
-        {children}
+    <html lang="en" suppressHydrationWarning className={poppins.variable}>
+      <body className="min-h-screen bg-background antialiased">
+        <main className="relative flex min-h-screen flex-col">
+          {children}
+        </main>
       </body>
     </html>
   );

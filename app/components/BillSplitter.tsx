@@ -106,15 +106,11 @@ export function BillSplitter() {
     setStep('participants');
   };
 
-  if (items.length === 0 && sharedFees.length === 0) {
-    return (
-      <div className="p-3 bg-gray-50 rounded text-center">
-        <p className="text-xs text-gray-600">Upload and scan a bill to get started</p>
-      </div>
-    );
-  }
-
-  return (
+  return !items.length ? (
+    <div className="p-3 bg-gray-50 rounded text-center">
+      <p className="text-xs text-gray-600">Upload and scan a bill to get started</p>
+    </div>
+  ) : (
     <div>
       {step === 'participants' && (
         <div>

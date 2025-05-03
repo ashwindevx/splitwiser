@@ -33,11 +33,11 @@ export default function Home() {
   return (
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-black mb-1">Splitwiser</h1>
-        <p className="text-sm text-gray-700">Smart & Fair Bill Splitting</p>
+        <h1 className="text-3xl font-bold mb-1">Splitwiser</h1>
+        <p className="text-sm">Smart & Fair Bill Splitting</p>
       </div>
       
-      <div className="bg-white border border-gray-200 rounded-lg p-4">
+      <div className="border border-border rounded-xl p-4">
         {!billScanned && <UploadBill />}
         {billScanned && <ScannedItems items={items} onReset={handleReset} />}
         <BillSplitter />
