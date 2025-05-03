@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={poppins.variable}>
-      <body className="min-h-screen bg-background antialiased">
+      <body className="min-h-screen bg-background text-foreground antialiased">
         <main className="relative flex min-h-screen flex-col">
           {children}
         </main>

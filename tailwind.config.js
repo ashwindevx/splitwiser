@@ -8,6 +8,33 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
+        },
+        secondary: {
+          DEFAULT: "var(--secondary)",
+          foreground: "var(--secondary-foreground)",
+        },
+        destructive: {
+          DEFAULT: "var(--destructive)",
+          foreground: "var(--destructive-foreground)",
+        },
+        muted: {
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
+        },
+        accent: {
+          DEFAULT: "var(--accent)",
+          foreground: "var(--accent-foreground)",
+        },
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
+      },
       fontFamily: {
         sans: [
           "Poppins",
@@ -25,18 +52,6 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      colors: {
-        primary: {
-          DEFAULT: "#2E5A9B", // Using the lighter blue as main color for better visibility
-          dark: "#003566", // Original main blue becomes dark variant
-          light: "#4B7CC7", // Lighter version for contrast on dark backgrounds
-        },
-        accent: "#FFD60A", // Keeping the vivid yellow as it works well for dark mode
-        muted: "#9CA3AF", // Lighter gray for better readability
-        background: "#000814", // Using your near-black navy as background
-        foreground: "#F8F9FA", // Using your off-white as text color
-        border: "#1F2937", // Darker border for separation on dark background
       },
     },
   },
